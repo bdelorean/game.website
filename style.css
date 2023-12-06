@@ -1,0 +1,367 @@
+:root {
+  --main-color: rgb(26, 100, 110);
+  --background-color: #354854;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Kameron";
+}
+body {
+  min-height: 100vh;
+  position: relative;
+}
+.home__pag {
+  background-image: url(./img/Mario.homepage.jpg);
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-color: var(--background-color);
+}
+/*
+.linear{
+ height: 100vh;
+  background-color: var(--background-color);
+  background: linear-gradient(to top, #596c77 0%, rgb(156, 232, 241) 100%);
+  z-index: -1;
+} */
+nav {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+
+  top: 0;
+  font-family: Irish Grover;
+  font-size: 2.5em;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+nav li {
+  list-style: none;
+  padding: 2em;
+  color: aliceblue;
+}
+a[href] {
+  color: aliceblue;
+  text-decoration: none;
+}
+.nav__logo {
+  width: 20%;
+  padding: 2em;
+  font-style: "Irish Grover";
+  color: aliceblue;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+}
+.nav__toggle {
+  display: none;
+}
+.personajes {
+  background-color: var(--background-color);
+  background: linear-gradient(to top, #596c77 0%, rgb(128 174 180) 100%);
+  font-style: var(--font-style);
+}
+.personajes footer {
+  bottom: unset;
+}
+.games footer {
+  bottom: unset;
+}
+
+.img__personajes {
+  width: 25%;
+  height: 300px;
+  border-radius: 25px;
+  margin-bottom: 2%;
+}
+.p__personajes {
+  width: 35%;
+  font-size: 2em;
+  color: aliceblue;
+  margin-top: 5%;
+  line-height: 1.5;
+}
+.p__mario,
+.p__pikachu {
+  color: var(--main-color);
+  font-family: Irish Grover;
+  font-size: 2.5em;
+}
+.mario {
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+.pokemon {
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.games {
+  background-color: var(--background-color);
+  background: linear-gradient(to top, #354854 0%, rgb(157, 211, 216) 100%);
+}
+.game__img {
+  width: 70%;
+  height: auto;
+  border-radius: 15px;
+}
+.game__description {
+  width: 50%;
+  color: aliceblue;
+  font-size: 2em;
+  margin-left: 8.5%;
+  line-height: 1.5;
+  margin-top: 1.5%;
+}
+h1 {
+  color: rgb(245, 248, 250);
+  font-size: 2em;
+  margin-bottom: 2%;
+}
+aside {
+  background-color: var(--main-color);
+  width: 15%;
+  height: 250px;
+  border-radius: 0px 25px 0px 25px;
+  color: aliceblue;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+  background: #1a646e;
+  box-shadow: inset 12px 12px 0px #144e56, inset -12px -12px 0px #207a86;
+}
+.revieuw__responsive {
+  display: none;
+}
+.game__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.game__advies {
+  margin-left: 8.5%;
+  color: rgb(13, 13, 61);
+  font-size: 1.5em;
+}
+.contact__flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15%;
+  margin-top: 3%;
+}
+.contact {
+  background-color: #1f1f1f;
+  background-image: url(./img/mario.contact.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  height: 500px;
+  width: 30%;
+  margin-bottom: 2%;
+}
+.contact__form--greet {
+  font-size: 3em;
+}
+.contact__form--input input {
+  margin: 20px;
+  padding: 5px;
+}
+.contact__form--textarea {
+  display: flex;
+  align-items: center;
+}
+label {
+  color: aliceblue;
+  display: inline-block;
+  font-size: 1.5em;
+}
+.contact__form--button {
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  border: transparent;
+  background-color: var(--main-color);
+  color: aliceblue;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+  margin-left: 30%;
+}
+
+.footer__text::before {
+  content: "©";
+}
+footer {
+  bottom: 0;
+  position: absolute;
+  height: 8vh;
+  background-color: var(--main-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Irish Grover;
+  font-size: 2.5em;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    font-size: 2em;
+  }
+  .nav__toggle {
+    display: block;
+    margin-right: 1%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: aliceblue;
+  }
+  .nav__links {
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--background-color);
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+  .hover-underline-animation:hover {
+    background-color: var(--main-color);
+    height: 50px;
+    width: 100%;
+  }
+  .nav__logo {
+    width: 50px;
+    font-size: 1em;
+  }
+  .active {
+    display: flex;
+  }
+  .mario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img__personajes {
+    width: 85%;
+    margin-top: 25px;
+  }
+  .p__personajes {
+    width: 80%;
+    margin-top: 0.5px;
+  }
+  .game__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .marioBros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  aside {
+    display: none;
+  }
+  .revieuw__responsive {
+    width: 50%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 5px;
+    margin-top: 25px;
+    padding: 45px;
+  }
+  .emoji {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+  }
+  .game__description {
+    width: 80%;
+  }
+  .contact {
+    background-color: var(--background-color);
+    background: linear-gradient(to top, #354854 0%, rgb(156, 232, 241) 100%);
+  }
+  .contact__flex {
+    display: grid;
+    place-items: center;
+    margin-right: 30%;
+  }
+  .contact__form {
+    width: 120%;
+  }
+  .nav__logo {
+    width: 200px;
+  }
+}
