@@ -135,7 +135,7 @@ a[href] {
 }
 .games {
   background-color: var(--background-color);
-  background: linear-gradient(to top, #354854 0%, rgb(157, 211, 216) 100%);
+  background: linear-gradient(to top, #596c77 0%, rgb(128 174 180) 100%);
 }
 .game__img {
   width: 70%;
@@ -238,7 +238,7 @@ label {
   margin-left: 30%;
 }
 
-.footer__text::before {
+.footer__text::before { /*copyrights insert */
   content: "©";
 }
 footer {
@@ -255,7 +255,7 @@ footer {
   color: aliceblue;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) { /* responsive voor mobile */
   nav {
     font-size: 2em;
   }
@@ -356,7 +356,7 @@ footer {
   .contact__flex {
     display: grid;
     place-items: center;
-    margin-right: 30%;
+    margin-right: 20%;
   }
   .contact__form {
     width: 120%;
