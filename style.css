@@ -254,6 +254,78 @@ footer {
   font-size: 2.5em;
   color: aliceblue;
 }
+.mushroom1__animation {
+  width: 80px;
+  height: 80px;
+  background-image: url(/img/mushroom__1.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 50px;
+  animation: mushroom1 25s infinite ease-in-out;
+  left: 0;
+  z-index: 1;
+  
+  }
+.mushroom2__animation {
+  width: 80px;
+  height: 80px;
+  background-image: url(/img/mushroom__2.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 50px;
+  animation: mushroom2 25s infinite ease-in-out;
+  left: 50px;
+  z-index: 1;
+}
+.mushroom3__animation {
+  width: 80px;
+  height: 80px;
+  background-image: url(/img/mushroom__3.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 50px;
+  animation: mushroom3 25s infinite ease-in-out;
+  right: 50%;
+  z-index: 1;
+}
+.mushroom4__animation {
+  width: 80px;
+  height: 80px;
+  background-image: url(/img/mushroom__3.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 50px;
+  animation: mushroom2 15s infinite ease-in-out;
+  left: 20%;
+  z-index: 1;
+}
+
+
+
+@keyframes mushroom1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(85vw);
+  }
+}
+@keyframes mushroom2 {
+  0% {
+    transform: translateX(85vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes mushroom3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(85vw);
+  }
+}
 
 @media screen and (max-width: 767px) { /* responsive voor mobile */
   nav {
